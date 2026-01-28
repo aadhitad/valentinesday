@@ -27,16 +27,17 @@
 <body>
   <h1>Yay ❤️ I knew it!</h1>
 
-  <audio id="bg-music" loop muted>
-    <source src="daydreaming.m4a" type="audio/mp4">
-  </audio>
+  <audio id="bg-music" loop>
+  <source src="daydreaming.m4a" type="audio/mp4">
+</audio>
+
 
   <script>
-    window.onload = () => {
-      const music = document.getElementById("bg-music");
-      music.muted = false;
-      music.play();
-    };
-  </script>
+  document.addEventListener("click", () => {
+    const music = document.getElementById("bg-music");
+    music.play();
+  }, { once: true });
+</script>
+
 </body>
 </html>
