@@ -29,28 +29,6 @@
     color: #ED2B53;
   }
 
-    .music-button {
-  font-size: 20px;
-  font-family: 'Playfair Display', serif;
-  background-color: #ED2B53;
-  padding: 30px 70px;
-  margin-top: 50px;
-  color: #FFE6D1;
-  border: none;
-  cursor: pointer;
-
-  box-shadow:
-    0 6px 0 #FF8C9D,
-    0 12px 0 #FF8C9D;
-}
-
-.music-button:active {
-  transform: translateY(6px);
-  box-shadow:
-    0 0px 0 #FF8C9D,
-    0 6px 0 #FF8C9D;
-}
-
   </style>
 </head>
 
@@ -63,13 +41,6 @@
   Nikita I love youuu so much. I’ve been thinking about how amazing the time we’ve spent together has been, and how much better my life feels with you in it. It has already been more than one year isn't that crazy? But you know it feels wayyyyyyyy longer than that. You make me so happy that it's hard to put into words. I really wish I could spend Valentine’s Day with you in person, but since I can’t be there right now, I wanted to make this for you just so you know I’m thinking of you and so we can still feel close, even if we aren't together.
   </p>
   
- <button class="music-button" id="music-btn">Pause music ⏸️</button>
-
-  <audio id="bg-music" loop>
-    <source src="daydreaming.m4a" type="audio/mp4">
-  </audio>
-
-
 
   <audio id="bg-music" loop>
   <source src="(Audio) daydreaming.m4a" type="audio/mp4">
@@ -91,16 +62,6 @@
     music.play();
   }, { once: true });
 
-  // toggle pause / play
-  btn.addEventListener("click", () => {
-    if (music.paused) {
-      music.play();
-      btn.textContent = "Pause music ⏸️";
-    } else {
-      music.pause();
-      btn.textContent = "Play music ▶️";
-    }
-  });
 </script>
 
 
