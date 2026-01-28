@@ -28,27 +28,6 @@
     line-height: 1.6;
     color: #FF8C9D;
   }
-
-    .bouquet {
-  margin-top: 120px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-
-.flower {
-  font-size: 50px;
-  opacity: 0;
-  transform: scale(0.3);
-  transition: all 0.8s ease-out;
-}
-
-.flower.bloom {
-  opacity: 1;
-  transform: scale(1);
-}
-
-
   </style>
 </head>
 
@@ -61,16 +40,6 @@
   Nikita I love youuu so much. I’ve been thinking about how amazing the time we’ve spent together has been, and how much better my life feels with you in it. It has already been more than one year isn't that crazy? But you know it feels wayyyyyyyy longer than that. You make me so happy that it's hard to put into words. I really wish I could spend Valentine’s Day with you in person, but since I can’t be there right now, I wanted to make this for you just so you know I’m thinking of you and so we can still feel close, even if we aren't together.
   </p>
   
-  <div class="bouquet">
-  <span class="flower">🌸</span>
-  <span class="flower">🌷</span>
-  <span class="flower">🌹</span>
-  <span class="flower">🌼</span>
-  <span class="flower">💐</span>
-</div>
-
-  
-
   <audio id="bg-music" loop>
   <source src="(Audio) daydreaming.m4a" type="audio/mp4">
 </audio>
@@ -91,23 +60,6 @@
     music.play();
   }, { once: true });
 
-</script>
-
-  <script>
-  const flowers = document.querySelectorAll(".flower");
-
-  const observer = new IntersectionObserver(
-    entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("bloom");
-        }
-      });
-    },
-    { threshold: 0.6 }
-  );
-
-  flowers.forEach(flower => observer.observe(flower));
 </script>
 
 
