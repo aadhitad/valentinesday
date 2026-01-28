@@ -3,30 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <title>❤️</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
 
-</head>
-<body> 
-  <h1>Yay ❤️ I knew it!</h1>
-
-<style>
+  <style>
     body {
       text-align: center;
       margin-top: 100px;
       font-family: 'Playfair Display', serif;
       background-color: #FFF7E5;
       font-weight: 700;
-      
     }
-    
+
     h1 {
-    color: #FF8C9D;
-    font-size: 100px;
+      color: #FF8C9D;
+      font-size: 100px;
     }
-    
   </style>
-  
+</head>
+
+<body>
+  <h1>Yay ❤️ I knew it!</h1>
+
+  <audio id="bg-music" loop muted>
+    <source src="daydreaming.m4a" type="audio/mp4">
+  </audio>
+
+  <script>
+    window.onload = () => {
+      const music = document.getElementById("bg-music");
+      music.muted = false;
+      music.play();
+    };
+  </script>
 </body>
 </html>
